@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CLEAN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body onload="checkCookie()">
+<!-- partial:index.partial.html -->
+<div class="container" align="center" >
+  <div id="app" >
+    
+    <h1 style="font-weight:bolder; font-size: 20rem;" animation="slide-enter">i am Clean</h1><br />
+    <h4 style="font-weight:bolder;">since</h4>
+    <div>
+      <input type="datetime-local" id="startDate" onchange="save()"/><br />
+ 
+      <button id="creator" @click="addHabit">RESET</button><br /><br /><br /><br />
+      <h2 id="soberTime" align="left"></h2> <br /><br />
+      <div id="badges" align="center" style="float:left"></div>
+    </div>
+    <div class="row habit">
+      <div v-for="habit in habits" class="four columns" transition="slide" :style="{ borderBottom: '5px solid ' + habit.random }">
+        <h4>{{ habit.title }}</h4>
+        <div class="shell">
+          <div class="bar" :style="{ width: 100 - habit.complete * (100 / habit.initial) + '%' }"></div>
+        </div>
+        <div class="lower">
+          <span @click="removeHabit(habit)">
+            <i class="fa fa-times"></i>
+          </span>
+          <button id="progress" 
+                  @click="completeReps(habit)" 
+                  v-show="!habit.finished" 
+                  :style="{ background: habit.random }"
+           >
+            <i class="fa fa-plus"></i>
+          </button>
+          <div v-show="!habit.finished">{{ habit.complete }}/{{ habit.initial }} times</div>
+          <div v-show="habit.finished" transition="slide">Complete!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

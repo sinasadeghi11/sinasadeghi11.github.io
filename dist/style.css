@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,100);
+body {
+  background: rgba(0, 0, 0, 0.705);
+  background-image: url("https://cdna.artstation.com/p/assets/images/images/017/939/874/original/kehan-chen-magic-forest.gif?1557927915");
+  background-blend-mode:overlay;
+  background-size:300%;
+  font-family: "Lato", sans-serif;
+  padding: 3rem;
+  padding-top: 1rem;
+}
+
+#app {
+  margin-top: 50px;
+  color: #fff;
+}
+
+input[type=text], input[type=number], input[type=date], input[type=time], input[type=datetime-local] {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-bottom: 20px;
+
+}
+
+input[type=number],input[type=date] {
+  width: 130px;
+  margin-bottom: 30px;
+}
+
+#creator, #progress {
+  border: 0;
+  border-radius: 50%;
+  background: #202020;
+  outline: none;
+  color: #fff;
+  transition: background 0.15s ease;
+}
+#creator:hover, #progress:hover {
+  background: #007064;
+}
+
+#progress {
+  position: absolute;
+  bottom: 22px;
+  right: 22px;
+  border-radius: 50%;
+  margin: 13px 0 0 0;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.lower div {
+  float: left;
+  font-size: 1.4em;
+  margin: 18px 0 0 3px;
+}
+.lower span {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  color: #444;
+  transition: color 0.2s ease;
+}
+.lower span:hover {
+  color: #333;
+}
+
+.habit {
+  margin-top: 20px;
+}
+
+.columns {
+  position: relative;
+  margin: 20px 20px 0 0;
+  background: #555;
+  padding: 35px;
+  min-width: 300px;
+}
+.columns h4 {
+  margin-bottom: 12;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shell {
+  height: 20px;
+  width: 230px;
+  border-radius: 13px;
+  background: linear-gradient(to right, #9658b5, #e3505a);
+  overflow: hidden;
+}
+
+.bar {
+  background: #333;
+  height: 20px;
+  float: right;
+}
+
+.slide-transition {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.slide-enter, .slide-leave {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 550px) {
+  .columns {
+    text-align: center;
+  }
+  .columns .shell {
+    margin: 0 auto;
+  }
+}
+
+div.app {
+  background-color: rgba(0, 0, 0, 0.226);
+  border-radius:5%;
+  width:100%;
+}
+
