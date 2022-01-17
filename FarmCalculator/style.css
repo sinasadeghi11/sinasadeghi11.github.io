@@ -1,0 +1,205 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,100);
+html {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin:0 auto;
+  width: 100%;
+}
+
+body {
+  background:rgb(0, 0, 0);
+  
+  background-blend-mode: overlay;
+
+  background-repeat:no-repeat;
+  font-family: "Lato", sans-serif;
+  padding: 0rem;
+  padding-top: 0rem;
+}
+
+#app {
+  margin-top: 500px;
+  color: rgb(3, 3, 3);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(255, 255, 255) 20%, rgb(2, 58, 0) 100%);
+}
+
+input[type=text], input[type=number], input[type=date], input[type=time], input[type=datetime-local] {
+  background: rgb(255, 255, 255);
+  border: 1;
+  border-radius: 5%;
+  border-bottom: 1px solid #fff;
+  color: rgb(0, 0, 0);
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  
+  margin-bottom: 0px;
+  text-align: center;
+
+}
+
+input[type=number],input[type=date] {
+  width: 130px;
+  margin-bottom: 0px;
+}
+
+#creator, #progress {
+  border: 0;
+  border-radius: 50%;
+  background: #202020;
+  outline: none;
+  color: #fff;
+  transition: background 0.15s ease;
+}
+#creator:hover, #progress:hover {
+  background: #007064;
+}
+
+#progress {
+  position: absolute;
+  bottom: 22px;
+  right: 22px;
+  border-radius: 50%;
+  margin: 13px 0 0 0;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+progress::-moz-progress-bar { background: green; }
+
+.lower div {
+  float: left;
+  font-size: 1.4em;
+  margin: 18px 0 0 3px;
+}
+.lower span {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  color: #444;
+  transition: color 0.2s ease;
+}
+.lower span:hover {
+  color: #333;
+}
+
+.habit {
+  margin-top: 0px;
+}
+
+.columns {
+  position: relative;
+  margin: 20px 20px 0 0;
+  background: #555;
+  padding: 35px;
+  min-width: 300px;
+}
+.columns h4 {
+  margin-bottom: 12;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shell {
+  height: 20px;
+  width: 230px;
+  border-radius: 13px;
+  background: linear-gradient(to right, #9658b5, #e3505a);
+  overflow: hidden;
+}
+
+.bar {
+  background: #333;
+  height: 20px;
+  float: right;
+}
+
+.slide-transition {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.slide-enter, .slide-leave {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 550px) {
+  .columns {
+    text-align: center;
+  }
+  .columns .shell {
+    margin: 0 auto;
+  }
+}
+
+div.app {
+  background-color: rgba(0, 0, 0, 0.226);
+  border-radius:5%;
+  width:100%;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgb(0,66,8);
+  background: linear-gradient(0deg, rgba(0,66,8,1) 0%,rgb(0, 0, 0) 25%, rgba(0,0,0,1) 100%);
+  
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 4px solid;
+  border-color: rgb(59, 59, 59);
+}
+
+/* Parent Container */
+.content_img{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 10px;
+ }
+ 
+ /* Child Text Container */
+ .content_img div{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+ }
+ 
+ /* Hover on Parent Container */
+ .content_img:hover{
+  cursor: pointer;
+ }
+ 
+ .content_img:hover div{
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+ }
