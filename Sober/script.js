@@ -106,7 +106,7 @@ var intervalId = window.setInterval(function(){
   //add connections
   for (var i = 1; i < minutes+1; i++) {
     neuronText += "o";
-    if (i%150==0) {
+    if (i%100==0) {
       neuronText += "<br />"
     }
   }
@@ -114,7 +114,7 @@ var intervalId = window.setInterval(function(){
   //add receptors
   for (var i = 1; i < hours+1; i++) {
     neuronText += "O";
-    if (i%150==0) {
+    if (i%80==0) {
       neuronText += "<br />"
     }
   }
