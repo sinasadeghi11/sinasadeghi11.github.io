@@ -12,13 +12,25 @@
 <div class="container" align="center" >
   <div id="app" >
     
-    <h1 style="font-weight:bolder; font-size: 20rem;" animation="slide-enter">i am Clean</h1><br />
-    <h4 style="font-weight:bolder;">since</h4>
+    <h1 style="font-weight:bolder; font-size: 5rem; color: #0F7D0F" animation="slide-enter">Regen.Lab.io</h1><br />
+    
     <div>
+      <button id="creator" @click="addHabit">RESET</button><br />
       <input type="datetime-local" id="startDate" onchange="save()"/><br />
  
-      <button id="creator" @click="addHabit">RESET</button><br /><br /><br /><br />
-      <h2 id="soberTime" align="left"></h2> <br /><br />
+      
+
+      <h5 style="font-weight:bolder;">SYNTHESIS IN PROGRESS</h5>
+    <progress min="0" max="100" value="20" style=""></progress> <br />
+
+      
+      <h2 id="soberTime" align="left" style=
+          "font-size: 2rem; 
+          line-height: 3rem; 
+          color: #16aa16;
+          background-color: black;">
+        </h2> <br /><br />
+
       <div id="badges" align="center" style="float:left"></div>
     </div>
     <div class="row habit">

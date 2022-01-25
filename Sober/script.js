@@ -93,15 +93,41 @@ var intervalId = window.setInterval(function(){
   hours = Math.floor((dif/1000/60/60));
   minutes = Math.floor((dif/1000/60));
   seconds = Math.floor((dif/1000));
+
+  neuronText = "";
+  //add neurons
+  for (var i = 1; i < seconds+1; i++) {
+    neuronText += ".";
+    if (i%300==0) {
+      neuronText += "<br />"
+    }
+  }
+  neuronText += "<br />"
+  //add connections
+  for (var i = 1; i < minutes+1; i++) {
+    neuronText += "o";
+    if (i%300==0) {
+      neuronText += "<br />"
+    }
+  }
+  neuronText += "<br />"
+  //add receptors
+  for (var i = 1; i < hours+1; i++) {
+    neuronText += "O";
+    if (i%300==0) {
+      neuronText += "<br />"
+    }
+  }
   //milliseconds = Math.floor(((today - startDate)*3.72) - seconds*1000);
   document.getElementById("soberTime").innerHTML = 
     numberWithCommas(years) + " Years <br />" + 
     numberWithCommas(months) + " Months <br />" + 
-    numberWithCommas(weeks) + " Weeks <br /> " + 
-    numberWithCommas(days) + " Days <br />" + 
-    numberWithCommas(hours) + " Hours <br />" + 
-    numberWithCommas(minutes) + " Minutes <br /> " + 
-    numberWithCommas(seconds) + " Seconds <br />" 
+    Math.round((dif/1000/60/60/24)*100, 2) + "% Dopamine Storage <br /> " + 
+    numberWithCommas(days) + " Clusters Generated <br />" + 
+    numberWithCommas(hours) + " Receptors Restored <br />" + 
+    numberWithCommas(minutes) + " Connections Formed <br /> " + 
+    numberWithCommas(seconds) + " Neurons Created  <br />" +
+    neuronText 
     //numberWithCommas(milliseconds) + " Healthy Cells"
 ;
 
@@ -110,9 +136,9 @@ if (hours > 0) {
   badgesHTML += "<div style='float:left'><h4>One Hour</h4><img style='padding: 5px;' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGP1Nvima4jGK1tJM3_Ni0iPceP1GKNX0Hfl2PzRBQHIC8bAfbs1GW0SoPEn4BK5NSE0g&usqp=CAU' width='164' height='164' ' ></div>"
 }
 
-if (hours > 10) {
+if (hours > 5) {
   let badge = 'https://365psd.com/images/istock/previews/9616/96162507-medal-award-icon.jpg'
-  badgesHTML += "<div style='float:left'><h4>Ten Hours</h4><img style='padding: 5px;' src='data:image/png;base64,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' width='164' height='164' ></div>"
+  badgesHTML += "<div style='float:left'><h4>Five Hours</h4><img style='padding: 5px;' src='data:image/png;base64,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' width='164' height='164' ></div>"
 }
 
 if (days > 0) {

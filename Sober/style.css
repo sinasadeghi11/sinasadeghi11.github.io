@@ -1,12 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,100);
 body {
-  background: rgba(0, 0, 0, 0.705);
-  background-image: url("https://cdna.artstation.com/p/assets/images/images/017/939/874/original/kehan-chen-magic-forest.gif?1557927915");
+  background: rgba(0, 0, 0, 0.973);
+  background-image: url("https://www.fromanniek.com/wp-content/uploads/2018/06/combb.gif");
   background-blend-mode:overlay;
-  background-size:300%;
+  background-size:90%;
   font-family: "Lato", sans-serif;
   padding: 3rem;
   padding-top: 1rem;
+  display:flex;
 }
 
 #app {
@@ -44,14 +45,26 @@ input[type=number],input[type=date] {
   background: #007064;
 }
 
-#progress {
-  position: absolute;
-  bottom: 22px;
-  right: 22px;
-  border-radius: 50%;
-  margin: 13px 0 0 0;
-  padding: 0 14px;
-  cursor: pointer;
+
+
+progress {
+  background: white;
+}
+
+progress::-webkit-progress-value {
+  background: #0F7D0F;
+}
+
+progress::-moz-progress-bar {
+  background: #0F7D0F;
+}
+
+progress::-webkit-progress-value {
+  background: #0F7D0F;
+}
+
+progress::-webkit-progress-bar {
+  background: #0F7D0F;
 }
 
 .lower div {
