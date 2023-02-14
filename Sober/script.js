@@ -123,7 +123,7 @@ var intervalId = window.setInterval(function(){
     numberWithCommas(years) + " Years <br />" + 
     numberWithCommas(months) + " Months <br />" + 
     Math.round((dif/1000/60/60/24)*100, 2) + "% Dopamine Storage <br /> " + 
-    numberWithCommas(days) + "... Clusters Generated <br />" + 
+    "clusters Generated"+ numberWithCommas(days) + "<br />" + 
     "powerRestored......." +  numberWithCommas(hours) + "<br />" + 
     "connectionsFormed......." + numberWithCommas(minutes) + "<br /> " + 
      "neuronsCreated......." + numberWithCommas(seconds) + "<br />" +
