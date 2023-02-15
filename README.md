@@ -1,24 +1,8 @@
 
-# Python Projects
+# Sina Sadeghi
+Founder of Isfa Studio
 
-A collection of Python apps I have created and am releasing as open-source. 
+Welcome to some of my open-source work!
 
+Contact: sinasadeghi11@gmail.com
 
-
-
-
-## App List
-
-- SimpleCalc: 
-- KomPress:
-- MazeGenerator:
-- PasswordGenerator:
-- VirtualPet:
-## App List
-
-- SimpleCalc: 
-- KomPress:
-- MazeGenerator:
-- PasswordGenerator:
-- VirtualPet:
-(README WORK IN PROGRESS)
