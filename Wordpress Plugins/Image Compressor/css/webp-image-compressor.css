@@ -1,0 +1,61 @@
+/* WebP Image Compressor Plugin Styles */
+
+/* Main container */
+.wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.wrap h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Subtitle */
+.wrap p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Form */
+.wrap form {
+    margin-top: 30px;
+}
+
+/* Submit button */
+.wrap input[type="submit"] {
+    background-color: #0073aa;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Submit button hover state */
+.wrap input[type="submit"]:hover {
+    background-color: #005d87;
+}
+
+/* Success message */
+.wrap p.success {
+    color: #00b300;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Error message */
+.wrap p.error {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 20px;
+}

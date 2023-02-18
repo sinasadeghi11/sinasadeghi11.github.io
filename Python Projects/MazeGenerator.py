@@ -16,6 +16,7 @@ for x in range(MAZE_WIDTH):
 
 # Display the maze
 root = tk.Tk()
+root.title("MazeGen")
 canvas = tk.Canvas(root, width=MAZE_WIDTH * CELL_SIZE, height=MAZE_HEIGHT * CELL_SIZE)
 canvas.pack()
 

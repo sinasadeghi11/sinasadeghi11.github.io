@@ -1,0 +1,34 @@
+ul.pdf-list {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul.pdf-list li {
+  display: block;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+ul.pdf-list li img {
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+ul.pdf-list li h3 {
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+ul.pdf-list a {
+  color: white;
+  padding: 5px;
+}
+
+ul.pdf-list button {
+  margin-right: 5px;
+  outline: 2px solid rgb(43, 43, 43);
+}
