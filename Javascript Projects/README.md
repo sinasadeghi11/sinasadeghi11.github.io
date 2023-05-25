@@ -4,7 +4,7 @@ Welcome to the Chrome Extensions folder! This is where you'll find a variety of 
 
 ---
 
-## 🗂️ Extensions
+## 🗂️ Projects
 
 Each extension has its own folder, inside which you can find:
 
