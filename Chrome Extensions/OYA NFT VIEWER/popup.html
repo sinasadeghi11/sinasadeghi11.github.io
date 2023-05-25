@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OYA HUMANITY 3.0</title>
+  <style>
+    body {
+      width: 300px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-align: center;
+      background-color: #006f71;
+      color: #fff;
+      padding: 10px 0;
+      margin: 0;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    select {
+      display: block;
+      width: 100%;
+      padding: 6px 10px;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #495057;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>OYA HUMANITY 3.0</h1>
+  <label for="image-number">Choose a parcel:</label>
+  <select id="image-number">
+    <option value="1">1</option>
+  </select>
+  <h2 id="parcel-title"></h2>
+  <img id="parcel-image" src="" alt="Parcel image">
+  <script src="popup.js"></script>
+</body>
+</html>

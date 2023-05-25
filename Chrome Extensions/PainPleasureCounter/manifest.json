@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Pain & Pleasure Balance",
+  "version": "1.0",
+  "description": "Track daily pain and pleasure activities.",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon48.png"
+    }
+  },
+  "permissions": ["storage", "alarms"],
+  "options_page": "options.html",
+  "icons": {
+    "48": "icon48.png"
+  }
+}

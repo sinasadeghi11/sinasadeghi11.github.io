@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Fractal Data Scraper",
+    "version": "1.0",
+    "description": "A simple data scraper for Google Chrome",
+    "icons": {
+      "48": "icon.png"
+    },
+    "permissions": [
+      "activeTab",
+      "https://*/*",
+      "http://*/*"
+    ],
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    }
+  }
+      
