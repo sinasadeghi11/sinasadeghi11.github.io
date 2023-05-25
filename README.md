@@ -57,7 +57,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-[Your Name] - [Your Email] - [Your LinkedIn/Website (Optional)]
+[Sina Sadeghi] - [Your Email] - [Your LinkedIn/Website (Optional)]
 
 ---
 
