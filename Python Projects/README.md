@@ -1,16 +1,12 @@
-
 # Python Projects
 
-A collection of Python apps I have created and am releasing as open-source. 
+Welcome to the Chrome Extensions folder! This is where you'll find a variety of projects developed using Python. 
 
+---
 
-## App List
+## 🗂️ Extensions
 
-- SimpleCalc: 
-- KomPress:
-- MazeGenerator:
-- PasswordGenerator:
-- VirtualPet:
+Each extension has its own folder, inside which you can find:
 
-
-(README WORK IN PROGRESS)
+- Source code
+- Installation instructions (coming soon)
