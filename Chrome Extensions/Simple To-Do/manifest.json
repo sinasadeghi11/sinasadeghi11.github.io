@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "Simple To-Do List",
+    "description": "A simple to-do list extension",
+    "version": "1.0",
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "storage"
+    ]
+  }
+  
