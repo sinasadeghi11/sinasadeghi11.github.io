@@ -1,0 +1,25 @@
+<RootWidget>:
+    id: root_layout
+    orientation: "vertical"
+    ScrollView:
+        id: scroll_layout
+        size_hint: (1, None)
+        size: Window.size
+        GridLayout:
+            id: grid
+            cols: 1
+            spacing: 10
+            padding: 10
+            size_hint_y: None
+            height: self.minimum_height
+    BoxLayout:
+        size_hint: (1, .1)
+        Button:
+            text: "Load Workouts"
+            on_press: app.build()
+
+<WorkoutLabel>:
+    size_hint_y: None
+    height: self.texture_size[1]
+    text_size: self.width, None
+    valign: "middle"

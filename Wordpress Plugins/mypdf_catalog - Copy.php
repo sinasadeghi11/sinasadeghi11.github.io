@@ -2,7 +2,7 @@
 /*
 Plugin Name: My PDF Catalog by Sina
 Description: Displays a list of PDF files with title, thumbnail, and download/read buttons
-Version: 1.4
+Version: 1.3
 Author: Sina Sadeghi
 */
 
@@ -25,7 +25,7 @@ function mypdf_catalog_shortcode() {
         $output .= '<ul class="pdf-list">';
 
         foreach ( $attachments as $attachment ) {
-            $pdf_title = ucwords( str_replace( '_', ' ', basename( $attachment->post_title, '.pdf' ) ) ) . ' - PDF';
+            $pdf_title = ucwords( str_replace( '_', ' ', basename( $attachment->post_title, '.pdf' ) ) ) . '.PDF';
             $pdf_url = wp_get_attachment_url( $attachment->ID );
             $pdf_thumbnail = wp_get_attachment_image_src( $attachment->ID, 'thumbnail' )[0];
             $output .= '<li>';
@@ -33,6 +33,9 @@ function mypdf_catalog_shortcode() {
             $output .= '<button><a href="' . $pdf_url . '" class="pdf-download" download>Descargar</a></button>';
             $output .= '<button><a href="' . $pdf_url . '" class="pdf-read" target="_blank">Leer</a></button>';
             $output .= '<img src="' . $pdf_thumbnail . '" alt="' . $pdf_title . '">';
+            
+
+
             $output .= '</li>';
         }
 
