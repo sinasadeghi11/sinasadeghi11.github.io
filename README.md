@@ -1,4 +1,4 @@
-# [Your GitHub Username]'s Project Repository
+# Sina Sadeghi's Repository
 
 Hello there! Welcome to my project repository. Here, you'll find a collection of my various projects, which range from Chrome extensions to Wordpress plugins, and everything in between. Please feel free to explore each of them, and don't hesitate to raise any issues or contribute if you find something interesting!
 
