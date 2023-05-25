@@ -57,13 +57,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-[Sina Sadeghi] - [Your Email] - [Your LinkedIn/Website (Optional)]
-
----
-
-## Acknowledgements
-
-Here you could credit any third-party resources/tools that have been important for your projects or thank your followers, contributors, etc.
+Sina Sadeghi - sinasadeghi11@gmail.com - www.isfastudio.com
 
 ---
 
